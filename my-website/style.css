@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe4ec;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* SECTIONS GENERAL */
+.container,
+.about,
+.services,
+.faq {
+    padding: 80px 20px;
+}
+
+/* HERO */
+.container {
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d63384;
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+}
+
+/* SERVICES */
+.services {
+    text-align: center;
+}
+
+.service-box {
+    background-color: white;
+    margin: 20px auto;
+    padding: 25px;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* FAQ */
+.faq {
+    text-align: center;
+}
+
+.faq-item {
+    width: 60%;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.floating-card {
+    width: 60%;
+    margin: 30px auto;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #d63384;
+
+    animation: floatIn 1.2s ease-in-out;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .service-box,
+    .faq-item,
+    .floating-card {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .links a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+}
+.hero-side-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 3px solid rgba(255, 105, 180, 0.3);
+    opacity: 0.85;
+}
+
+.container {
+    position: relative;
+}
+.service-box,
+.faq-question,
+button {
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.faq-question:hover {
+    background-color: #d63384;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+.about,
+.services,
+.why-choose,
+.how-it-works,
+.faq {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+body {
+    line-height: 1.6;
+}
